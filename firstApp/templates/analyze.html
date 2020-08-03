@@ -3,12 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
 </head>
 <body>
-<h1>Your Analyzed Text - {{ purpose }}</h1>
-<p>
-    {{ analyzed_text }}
+ <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-</p>
+    <div class="container">
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Text Analyzer
+            </a>
+          </li>
+
+
+        </ul>
+        <!-- Links -->
+
+      </div>
+      <!-- Collapsible content -->
+
+    </div>
+
+  </nav>
+  <!--/.Navbar-->
+<br>
+<div class="container-fluid mt-3 mb-5">
+
+  <!-- Section -->
+  <section style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20(48).jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+    <style>
+      .input-grey .form-control {
+        border-radius: .125rem;
+      }
+
+      .input-grey input::placeholder {
+        color: #fff;
+      }
+
+      .input-grey.input-round {
+        border-radius: 10em;
+      }
+
+      .input-grey.input-round.input-group>.input-group-append>.btn{
+        border-top-left-radius: 10em;
+        border-bottom-left-radius: 10em;
+      }
+      button a i{
+      text-decoration:none;
+      color:#fff;}
+      button a {
+      text-decoration:none;
+      color:#fff;
+    </style>
+
+    <div class="mask rgba-black-light py-5">
+
+      <div class="container my-5">
+
+        <!--Grid row-->
+        <div class="row d-flex align-items-center justify-content-center py-5">
+          <!--Grid column-->
+          <div class="col-md-8 col-xl-6">
+            <!--Form-->
+            <div class="card blue-gradient">
+              <div class="card-body z-depth-2 p-4">
+
+<h2 class="m-3" style="color:#fff">Your Analyzed Text - {{ purpose }}</h2>
+<h5 class="m-3" style="color:#fff">
+ <b class="m-">{{ analyzed_text }}</b>
+
+
+</h5>
+                  <button class="btn blue-gradient"><a href="/"><i class="fa fa-home"></i> Home </a></button>
+              </div>
+            </div>
+            <!--/.Form-->
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Section -->
+
+</div>
 </body>
 </html>
